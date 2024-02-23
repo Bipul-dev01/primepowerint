@@ -24,82 +24,6 @@ body{
     /* background: #bed7e4; */
 }
 
-
-
-.wrapper-lift{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #16384c;
-}
-.container-lift{
-  position: relative;
-  width: 1300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px;
-}
-.container-lift .card-lift{
-  position: relative;
-  max-width: 360px;
-  height: 200px;
-  background: #fff;
-  margin: 30px 10px;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-  transition: 0.3s ease-in-out;
-}
-.container-lift .card-lift:hover{
-  height: 420px;
-}
-.container-lift .card-lift .imgBox{
-  position: relative;
-  width: 300px;
-  height: 170px;
-  /* height: 260px; */
-  top: -60px;
-  /* left: 20px; */
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-.container-lift .card-lift .imgBox img{
-  max-width: 100%;
-  height: 200px;
-  border-radius: 4px;
-}
-.container-lift .card-lift .content{
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
-  text-align: center;
-  color: #111;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-.container-lift .card-lift .content h2{
-  margin-top: 25px;
-}
-.container-lift .card-lift .content p{
-  font-size: 14px;
-  color: #000;
-  text-align: justify;
-  
-}
-.container-lift .card-lift:hover .content{
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-  transition-delay: 0.3s;
-}
-
 /* **********************************************************
     Top Section Branding Styling
 ********************************************************** */
@@ -220,6 +144,7 @@ header ul li a:hover{
 }
 .mySlides img {
     vertical-align: middle;
+    width: 1000px;
     height: 83vh;
    
 }
@@ -259,25 +184,7 @@ header ul li a:hover{
   background-color: rgb(20, 220, 150);
   color: #fff;
 }
-/* Caption text */
-/* .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}  */
-/* Number text (1/3 etc) */
-/* .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-} */
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -424,106 +331,7 @@ header ul li a:hover{
     transition: all 0.3s ease;
 }
 
-/* *********************************************************  
-    Our Portfolio Image Slider Styling
-********************************************************* */
-  .portfolioImageSlider{
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-  }
-  .portfolioImageSlider .portfolioHeadingImage img{
-    width: 320px;
-    height: 75px;
-    margin-bottom: -50px;
-  }
-  /* .portfolioImageSlider h1{
-      font-size: 30px;
-      color: rgb(174, 13, 171);
-      text-align: center;
-      margin-bottom: 5px;
-      text-shadow: 1px 1px #000;
-  } */
-  .slider{
-    /* height: 250px; */
-    height: 500px;
-    margin: auto;
-    position: relative;
-    width: 95%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-  }
-  .slider-track{
-    display: flex;
-    /* width: calc(250px*18); */
-    width: calc(500px*18);
-    animation: scroll 40s linear infinite;
-  }
-  @keyframes scroll{
-    0%{
-      transform: translateX(0);
-    }
-    100%{
-      /* transform: translate(calc(-250px*9)); */
-      transform: translate(calc(-500px*9));
-    }
-  }
-  .slide{
-    /* width: 250px;
-    height: 220px; */
-    width: 500px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    /* padding: 15px; */
-    padding: 20px;
-    perspective: 100px;
-  }
-  .slide img{
-    /* width: 100%; */
-    width: 400px;
-    height: 300px;
-    /* padding: 10px; */
-    padding-bottom: 10px;
-    transition: transform 1s;
-  }
-  .slide a{
-    text-decoration: none;
-    font-size: 15px;
-    margin-top: 10px;
-    background: #0b9e99;
-    padding: 5px 15px;
-    border-radius: 10px;
-    color: #fff;
-  }
-  .slide a:hover{
-    background: #a622d6;
-    transition: all 0.3s ease;
-  }
-  .slide img:hover{
-    transform: translateZ(20px);
-  }
-  .slider::before,
-  .slider::after{
-    background:linear-gradient(to right, rgb(231, 150, 230) 10%, rgba(187, 27, 209, 0) 100%);
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-  }
-  .slider::before{
-    left: 0;
-    top: 0;
-  }
-  .slider::after{
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-  }
+
 /* *******************************************************
   Infinite Card Slider JavaScript
 ******************************************************* */
@@ -537,7 +345,7 @@ header ul li a:hover{
   background: linear-gradient(to left top, #031A9A, #8B53FF);
 }
 .wrapper {
-  max-width: 1100px;
+  max-width: 1200px;
   width: 100%;
   position: relative;
 }
@@ -553,6 +361,7 @@ header ul li a:hover{
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  z-index: 1000;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
@@ -597,7 +406,7 @@ header ul li a:hover{
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
+  height: 430px;
   list-style: none;
   background: #fff;
   cursor: pointer;
@@ -607,20 +416,26 @@ header ul li a:hover{
 }
 .carousel .card .img {
   background: #8B53FF;
-  height: 148px;
-  width: 148px;
-  border-radius: 50%;
+  height: 250px;
+  width: 300px;
+  /* height: 148px;
+  width: 148px; */
+  /* border-radius: 50%; */
 }
 .card .img img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 320px;
+  height: 280px;
+  /* width: 140px;
+  height: 140px; */
+  /* border-radius: 50%; */
   object-fit: cover;
-  border: 4px solid #fff;
+  /* border: 4px solid #fff; */
+   border: 4px solid #8B53FF;
+  
 }
 .carousel .card h2 {
   font-weight: 500;
-  font-size: 1.56rem;
+  font-size: 1.4rem;
   margin: 30px 0 5px;
 }
 .carousel .card span {
@@ -1371,7 +1186,7 @@ section .title-customer::before{
   text-decoration: none;
   font-size: 1.1em; }
 .sml {
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex; }
 .sml li {
   list-style: none;
@@ -1540,10 +1355,11 @@ footer p {
   background: #606060; }
 
 
+/* ************************************************
+  Product Display Page :
+************************************************ */
 
-
-
-  #productDisplay {
+#productDisplay {
   margin-top: 60px; }
 
 .containerProduct {
@@ -1569,6 +1385,82 @@ footer p {
 .containerProduct .row .textF {
   font-family: 'Vollkorn', serif; }
 
+/* *************************************************
+    Lift/ Elevetor Display
+************************************************* */
+.wrapper-lift{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16384c;
+}
+.container-lift{
+  position: relative;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.container-lift .card-lift{
+  position: relative;
+  max-width: 360px;
+  height: 200px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+.container-lift .card-lift:hover{
+  height: 420px;
+}
+.container-lift .card-lift .imgBox{
+  position: relative;
+  width: 300px;
+  height: 170px;
+  /* height: 260px; */
+  top: -60px;
+  /* left: 20px; */
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container-lift .card-lift .imgBox img{
+  max-width: 100%;
+  height: 200px;
+  border-radius: 4px;
+}
+.container-lift .card-lift .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container-lift .card-lift .content h2{
+  margin-top: 25px;
+}
+.container-lift .card-lift .content p{
+  font-size: 14px;
+  color: #000;
+  text-align: justify;
+  
+}
+.container-lift .card-lift:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
 /* ******************************************************
           MEDIA QUERY / RESPONSIVE ALL PAGE
 ****************************************************** */
