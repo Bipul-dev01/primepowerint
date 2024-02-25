@@ -140,11 +140,13 @@ header ul li a:hover{
     Slide/Carousel Section Styling
 ********************************************************** */
 .mySlides {
-    display: none
+    display: none;
+    width: 100%;
 }
 .mySlides img {
     vertical-align: middle;
-    width: 1000px;
+    /* width: 1300px; */
+    width: 80%;
     height: 83vh;
    
 }
@@ -156,6 +158,9 @@ header ul li a:hover{
   margin: auto;
   margin-top: 10px;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* Next & previous buttons */
 .prevv, .nextt {
