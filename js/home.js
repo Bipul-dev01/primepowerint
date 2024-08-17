@@ -24,25 +24,36 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active1", "");
+        
+        dots[i].className = dots[i].className.replace(" active", "");
+        
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active1";
+    // dots[i].style.backgroundColor= "red";
+    dots[slideIndex - 1].className += " active";
 }
 
-// Auto Slide   if you need auto slide ,remove the commit "//"
+//Auto Slide   if you need auto slide ,remove the commit "//"
 
-var slideIndex = 0;
-showSlides();
+var slideIndexx = 0;
+showSlidess();
 
-function showSlides() {
+function showSlidess() {
     var i;
    var slides = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("dot");
+   //console.log(slides);
    for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";
    }
-   slideIndex++;
-   if (slideIndex > slides.length) { slideIndex = 1 }
-   slides[slideIndex - 1].style.display = "block";
-   setTimeout(showSlides, 3000); // Change image every 2.5 seconds
+   for (i = 0; i < dots.length; i++) {
+        
+        dots[i].className = dots[i].className.replace(" active", "");
+        
+    }
+   slideIndexx++;
+   if (slideIndexx > slides.length) { slideIndexx = 1 }
+   slides[slideIndexx - 1].style.display = "block";
+   dots[slideIndexx - 1].className += " active";
+   setTimeout(showSlidess, 3000); // Change image every 2.5 seconds
 }
