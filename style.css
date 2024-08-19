@@ -797,6 +797,7 @@ section .title::before{
     width: 280px;
     height: 360px;
     object-fit: cover;
+    object-position: center;
     border-radius: 15px;
     /* padding: 6px; */
     z-index: 1000;
@@ -962,13 +963,13 @@ section .title-teams::before{
   transition: all 0.3s ease; 
 }
 .teams .employee .card h1{
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #000;
   padding-top: 18px;
 }
 .teams .employee .card h2{
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
   color: #fff;
   margin-top: 5px;
@@ -978,6 +979,7 @@ section .title-teams::before{
   font-weight: 500;
   color: crimson;
   margin-top: 8px;
+  letter-spacing: 1px;
   text-shadow: 2px 2px #ccc;
 }
 .callTeam{
@@ -995,7 +997,7 @@ section .title-teams::before{
   height: 23px;
   color: green;
   background: #fff;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -1007,6 +1009,7 @@ section .title-teams::before{
   padding-left: 8px;
   font-size: 16px;
   color: #000;
+  font-weight: 500;
 }
 /* **********************************************************
     Valued Customer section start
@@ -1833,13 +1836,8 @@ footer p {
       padding: 0 13px;
     }
     .branding .companyName img{
-      width: 160px;
-    }
-    .branding .companyName h3{
-      font-size: 10px;
-      padding-right: 5px;
-      margin-top: -5px;
-      letter-spacing: 1px;
+      width: 180px;
+      height: auto;
     }
     .branding .cctvLogo img{
       width: 55px;
@@ -1858,7 +1856,7 @@ footer p {
       border: 0.7px solid red;
     }
     .branding .hotline a{
-      font-size: .6em;
+      font-size: .8em;
       padding-left: 6px;
     }
     .hotlinkNumber h1{
